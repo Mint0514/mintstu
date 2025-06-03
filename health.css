@@ -1,0 +1,15 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+
+}
+
+.main-screen {
+  margin-top: 100px;
+}
+
+.bakebuttom {
+  padding: 100px 100px;
+  margin: 20px;
+}
