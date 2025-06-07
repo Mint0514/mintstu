@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登入</title>
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="main-screen">
-    <button class="backbutton" onclick="mainpage()">返回主畫面</button>
 
-    </div>
-    <script src="health.js"></script>
+  <div class="login-container">
+    <button class="backbutton" onclick="mainpage()">返回主畫面</button>
+    <h2>🔐 使用者登入</h2>
+    <form id="loginForm">
+      <label for="username">帳號：</label>
+      <input type="text" id="username" required>
+
+      <label for="password">密碼：</label>
+      <input type="password" id="password" required>
+      <label><input type="checkbox" id="rememberMe"> 記住我</label>
+      <div id="error" class="error"></div>
+
+      <button type="submit">登入</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
 </body>
 </html>

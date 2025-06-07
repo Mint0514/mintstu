@@ -1,15 +1,98 @@
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
-
+  font-family: "Microsoft JhengHei", sans-serif;
+  background-color: #f4f6f8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
-.main-screen {
-  margin-top: 100px;
+form {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 480px;
+  width: 100%;
 }
 
-.bakebuttom {
-  padding: 100px 100px;
-  margin: 20px;
+/* === 表單標題與返回按鈕區塊 === */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.form-header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+/* === 返回按鈕樣式 === */
+.backbutton {
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.backbutton:hover {
+  background: #0056b3;
+}
+
+/* === 表單欄位 === */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* === 儲存按鈕 === */
+button[type="submit"] {
+  margin-top: 24px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }

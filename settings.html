@@ -7,30 +7,53 @@
 <link rel="stylesheet" href="settings.css">
 </head>
 <body>
-    <div class="settings-container">
+  <div class="settings-container">
     <h1>⚙️ 設定</h1>
-    <button class="bakebutton" onclick="mainpage()">返回主畫面</button>
+    <button class="backbutton" onclick="mainpage()">返回主畫面</button>
 
+    <!-- 語音通知開關 -->
     <div class="setting-option">
-      <label for="edit-health">📝 個人健康資訊填寫</label>
-      <button onclick="goToHealthInfo()">前往</button>
-    </div>
-
-    <div class="setting-option">
-      <label for="emergency-toggle">🚨 接收語音求救通知</label>
+      <label>🚨 接收語音求救通知</label>
       <label class="switch">
         <input type="checkbox" id="emergency-toggle" checked>
         <span class="slider round"></span>
       </label>
     </div>
 
+    <!-- 定位服務 -->
     <div class="setting-option">
-      <label for="tutorial">📖 使用教學</label>
+      <label>📍 啟用定位功能</label>
+      <label class="switch">
+        <input type="checkbox" id="location-toggle" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- 主題切換 -->
+    <div class="setting-option">
+      <label>🌗 顯示模式</label>
+      <select id="theme-select">
+        <option value="light">亮色</option>
+        <option value="dark">暗色</option>
+      </select>
+    </div>
+
+    <!-- 匯出資料 -->
+    <div class="setting-option">
+      <label>📤 匯出資料</label>
+      <button onclick="exportData()">匯出</button>
+    </div>
+
+    <!-- 教學頁 -->
+    <div class="setting-option">
+      <label>📖 功能說明</label>
       <button onclick="goToTutorial()">查看</button>
-    
     </div>
+
+    <!-- 登出 -->
     <button class="logout-button" onclick="logout()">登出</button>
-    </div>
-    <script src="settings.js"></script>
+  </div>
+
+  <script src="settings.js"></script>
 </body>
 </html>

@@ -8,31 +8,25 @@
 <body>
   <div class="main-screen">
 
-   <!-- <label for="address">地址：</label>
-  <input type="text" id="address" value="台南市東區大學路1號"> -->
-<div class="address-input-wrapper">
-  <input type="text" id="address" value="台南市東區大學路1號" />
-</div>
-
-
-    <div class="login">
-      <button onclick="login()">登入</button>
+    <div class="address-input-wrapper">
+      <input type="text" id="address" value="台南市東區大學路1號" />
     </div>
 
-    <!-- <button class="sos-button">求救</button>     -->
+    <div class="login">
+      <button onclick="login()" id="loginBtn">登入</button>
+    </div>
+    <div class="login-status" id="loginStatus"></div>
 
-    <a href="tel:119">
-  <button class="sos-button">📞 撥打 119</button>
-    </a>
+    <button class="sos-button" onclick="sosCall()">📞 求救</button>
 
     <div class="menu">
-      <button class="menu-button" onclick="settings()"> ⚙️ 設定 </button>  
+      <button class="menu-button" onclick="settings()">⚙️ 設定</button>  
       <button class="menu-button" onclick="callFamily()">📞 打給家人</button>
       <button class="menu-button" onclick="recordVoice()">🎤 語音錄製</button>
       <button class="menu-button" onclick="goToHealthInfo()">📝 個人健康資訊</button>
-      
     </div>
   </div>
 
   <script src="index.js"></script>
 </body>
+</html>
